@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+      /* Quick responsive map styling */
+
+      .map-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="./about.html">About.</a></li>
+          <li><a href="./schedule.html"> Schedule</a></li>
+          <li><a href="./register.html,">Register</a></li>
+          <li><a href="./contact.html">Contact.</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <h2>Get in Touch</h2>
+        <p>
+          You can reach us via email at
+          <a href="mailto:email@example.com">email@example.com</a>
+        </p>
+
+        <h3>Follow Us</h3>
+        <p>
+          <a href="https://twitter.com" target="_blank">Twitter</a> |
+          <a href="https://facebook.com" target="_blank">Facebook</a> |
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+      </section>
+
+      <!-- Embedded Google Map -->
+      <section>
+        <h3>Conference Venue</h3>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.134708768259!2d-122.41941568468141!3d37.774929779759154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c5c5a5f09%3A0x4f7c85f15a69f8f1!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1678389434675!5m2!1sen!2sus"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section>
+        <h3>Contact Us Form</h3>
+        <form action="submit_contact.php" method="post">
+          <!-- Name -->
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <!-- Email -->
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <!-- Message -->
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <!-- Submit -->
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 TechCon. All rights reserved. copyright</p>
+    </footer>
+  </body>
+</html>
